@@ -1,10 +1,13 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { Pets } from "./components/pets/Pets";
 
 const queryClient = new QueryClient();
 
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>TODO</QueryClientProvider>
+    <QueryClientProvider client={queryClient}>
+      <Pets />
+    </QueryClientProvider>
   );
 }
 
